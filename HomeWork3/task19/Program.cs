@@ -11,16 +11,17 @@ Console.WriteLine("Введите пятизначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 string num = Convert.ToString(number);
     if (num.Length == 5)
-{
-        if(num[0] == num[4] && (num[1] == num[3]))
     {
+        if(num[0] == num[4] && (num[1] == num[3]))
+    
         Console.WriteLine(" ДА ");
     
         else 
     
         Console.WriteLine(" Нет ");
+    
     }
-}
+
      else    
 {
     Console.WriteLine("Число должно быть пятизначным!");
