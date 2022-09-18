@@ -18,12 +18,9 @@ int[] GetArray(int size, int leftRange, int rightRange)
 int SumArray(int[] Array1)
 {
     int sum = 0;
-    for(int i = 0; i < Array1.Length; i++)
+    for(int i = 1; i < Array1.Length; i+=2)
 {
-    if (Array1[i] % 2 != 0)
-    {
-        sum = sum + Array1[i];
-    }
+        sum += Array1[i]; 
 }
     return sum;
 }
