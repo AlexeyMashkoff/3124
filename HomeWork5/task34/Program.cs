@@ -21,8 +21,7 @@ for(int i = 0; i < Array1.Length; i++)
 {
     if(Array1[i] % 2 == 0)
     {
-        count += 1;
-        
+        count += 1;  
     }
 }
     return count;
