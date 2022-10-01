@@ -8,7 +8,7 @@
 
 
 
-int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange = 10, int rightRange = 50)
+int[,] GetMatrix(int rowsCount, int columnsCount, int leftRange = 1, int rightRange = 20)
 {
     int[,] matrix = new int[rowsCount, columnsCount];
 
@@ -51,7 +51,7 @@ void Sum(int[,] matrix)
     {
         sum += matrix[i, j];
     }
-    Console.Write($"{ sum / matrix.GetLength(0)} ");
+    Console.Write((String.Format($"{ sum / matrix.GetLength(0):f1} ")));
 }
 }
 
