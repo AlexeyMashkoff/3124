@@ -51,7 +51,7 @@ void Sum(int[,] matrix)
     {
         sum += matrix[i, j];
     }
-    Console.Write((String.Format($"{ sum / matrix.GetLength(0):f1} ")));
+    Console.Write(($"{ sum / matrix.GetLength(0):f1} "));
 }
 }
 
